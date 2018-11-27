@@ -1,0 +1,22 @@
+.page-header {
+  background-color: $main-color;
+  padding-top: 49px;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-header__logo-svg {
+  fill: #000000;
+
+  &:hover,
+  &:focus {
+    fill: #303030;
+  }
+
+  &:active {
+    fill: #a7a7a7;
+  }
+}

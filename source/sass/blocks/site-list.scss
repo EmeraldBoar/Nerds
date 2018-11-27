@@ -1,0 +1,24 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-list__link {
+  padding-bottom: 5px;
+  color: #000000;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: #fb565a;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.site-list__link--active {
+  border-bottom: 2px solid #fb565a;
+}
