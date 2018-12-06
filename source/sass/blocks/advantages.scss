@@ -1,0 +1,92 @@
+.advantages__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 73px;
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.advantages__left {
+  width: 660px;
+  padding-top: 74px;
+}
+
+.advantages__right {
+  width: 360px;
+  padding-top: 285px;
+  background-image: url("../img/nerds-illustration.png");
+  background-repeat: no-repeat;
+  background-position: 0 40px;
+}
+
+.advantages__slogan {
+  display: block;
+  margin-bottom: 33px;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+}
+.advantages__text {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.advantages__title {
+  display: block;
+  margin-bottom: 23px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages__item {
+  position: relative;
+  margin-bottom: 24px;
+  padding-left: 37px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.advantages__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -1px;
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
+}
+
+.advantages__table {
+  border-collapse: collapse;
+}
+
+.advantages__caption {
+  margin-bottom: 43px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.advantages__header {
+  text-align: left;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.advantages__header sup {
+  font-size: 28px;
+}
+
+.advantages__info {
+  text-align: left;
+  line-height: 18px;
+}
