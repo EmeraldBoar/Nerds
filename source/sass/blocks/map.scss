@@ -1,0 +1,14 @@
+.map {
+  display: flex;
+  align-items: center;
+  height: 416px;
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+}
+
+.map__contacts {
+  width: 319px;
+  min-height: 308px;
+  padding: 50px 50px;
+  background-color: #ffffff;
+}

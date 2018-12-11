@@ -20,12 +20,22 @@
 }
 
 .advantages__slogan {
+  position: relative;
   display: block;
   margin-bottom: 33px;
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
   color: #000000;
+}
+
+.advantages__slogan span {
+  display: inline-block;
+  width: 30px;
+  height: 4px;
+  margin-left: 4px;
+  background-color: #000000;
+  vertical-align: middle;
 }
 
 .advantages__text {
