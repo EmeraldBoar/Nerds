@@ -1,0 +1,79 @@
+.filters {
+  width: 260px;
+}
+
+.filters__fieldset {
+  margin: 0;
+  margin-bottom: 56px;
+  padding: 0;
+  border: none;
+}
+
+.filters__legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.filters__range {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  margin-top: 46px;
+  margin-bottom: 14px;
+  padding: 0 20px;
+  background-color: #eeeeee;
+  border-radius: 3px;
+}
+
+.filters__bar {
+  position: relative;
+  width: 152px;
+  height: 2px;
+  background-color: #00ca74;
+  box-shadow: 60px 0 0 0 #d7dcde;
+}
+
+.filters__toggle {
+  position: absolute;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ababab;
+  box-shadow: 0 2px 0 0 #cccdcd,
+    inset 0px 0px 0 8px #ffffff;
+}
+
+.filters__toggle--plus {
+  left: -3px;
+}
+
+.filters__toggle--minus {
+  left: 139px;
+}
+
+.filters__range-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters__range-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 112px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.filters__input-text {
+  width: 80px;
+  height: 38px;
+  padding: 0 5px;
+  text-align: center;
+  background-color: #eeeeee;
+  border: none;
+  border-radius: 3px;
+}

@@ -46,7 +46,7 @@
   </header>
   <main class="page-main">
     <section class="page-title">
-      <div class="container">
+      <div class="page-title__wrapper container">
         <h1 class="page-title__text">Магазин готовых шаблонов</h1>
       </div>
     </section>
@@ -57,13 +57,17 @@
             <legend class="filters__legend">Стоимость:</legend>
             <div class="filters__range">
               <div class="filters__bar">
-                <div class="filters__toggle filters__toggle--plus">+</div>
-                <div class="filters__toggle filters__toggle--minus">-</div>
+                <div class="filters__toggle filters__toggle--plus"></div>
+                <div class="filters__toggle filters__toggle--minus"></div>
               </div>
             </div>
             <div class="filters__range-wrapper">
-              <label class="filters__range-title">От<input class="filters__input-text" type="text"></label>
-              <label class="filters__range-title">До<input class="filters__input-text" type="text"></label>
+              <label class="filters__range-title">От
+                <input class="filters__input-text" type="text" placeholder="0">
+              </label>
+              <label class="filters__range-title">До
+                <input class="filters__input-text" type="text" placeholder="15000">
+              </label>
             </div>
           </fieldset>
           <fieldset class="filters__fieldset">
