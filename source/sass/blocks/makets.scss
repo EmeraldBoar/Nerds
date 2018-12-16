@@ -1,3 +1,243 @@
 .makets {
   width: 760px;
 }
+
+.makets__sort {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 54px;
+}
+
+.makets__sort-title {
+  width: 360px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.makets__sort-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 360px;
+}
+
+.makets__sort-list {
+  display: flex;
+  width: 280px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.makets__sort-item {
+  margin-right: 25px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.makets__sort-button {
+  padding: 0;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 1);
+  }
+}
+
+.makets__sort-button--active {
+  color: rgba(0, 0, 0, 1);
+}
+
+.makets__sort-toggles {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 60px;
+}
+
+.makets__sort-toggle {
+  width: 0;
+  height: 0;
+  padding: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 11px solid rgba(35, 31, 32, 0.2);
+  border-bottom: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-top: 11px solid rgba(35, 31, 32, 0.6);
+  }
+
+  &:active {
+    border-top: 11px solid rgba(35, 31, 32, 1);
+  }
+}
+
+.makets__sort-toggle--active {
+  border-top: 11px solid rgba(35, 31, 32, 1);
+}
+
+.makets__sort-toggle--down {
+  margin-right: 17px;
+}
+
+.makets__sort-toggle--up {
+  transform: rotate(180deg);
+}
+
+.makets__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 27px;
+  padding: 0;
+  list-style: none;
+}
+
+.makets__item {
+  position: relative;
+  width: 360px;
+  margin-bottom: 34px;
+}
+
+.makets__header {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 16px;
+  background-color: rgba(77, 77, 77, 0.1);
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.makets__circles {
+  display: flex;
+}
+
+.makets__circle {
+  width: 14px;
+  height: 14px;
+  margin-right: 9px;
+  background-color: #ffffff;
+  border-radius: 50%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.makets__item:hover .makets__header {
+  background-color: rgba(77, 77, 77, 1);
+}
+
+.makets__image {
+  display: block;
+}
+
+.makets__info {
+  position: absolute;
+  bottom: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 360px;
+  min-height: 231px;
+  padding: 28px 20px;
+  text-align: center;
+  background-color: #eeeeee;
+}
+
+.makets__item:hover .makets__info,
+.makets__item:focus .makets__info {
+  display: flex;
+}
+
+.makets__title {
+  margin: 0;
+  margin-bottom: 15px;
+  color: #000000;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.makets__description {
+  margin: 0;
+  margin-bottom: 30px;
+  color: #666666;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.makets__button {
+  width: 200px;
+}
+
+.makets__pagination {
+  margin-bottom: 60px;
+}
+
+.makets__pagination-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.makets__pagination-item {
+  margin-right: 11px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.makets__pagination-button {
+  width: 50px;
+  height: 50px;
+  color: #000000;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  background-color: #eeeeeeff;
+  border: none;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    background-color: #dfdfdfff;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.makets__pagination-button--next {
+  width: 260px;
+}
+
+.makets__pagination-button--active {
+  padding-top: 15px;
+  background-color: #ffffff;
+  border: 3px solid #dbdbdb;
+}

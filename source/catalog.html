@@ -53,7 +53,7 @@
     <div class="page-main__wrapper container">
       <aside class="filters">
         <form class="filters__form" action="https://echo.htmlacademy.ru">
-          <fieldset class="filters__fieldset">
+          <fieldset class="filters__fieldset filters__fieldset-price">
             <legend class="filters__legend">Стоимость:</legend>
             <div class="filters__range">
               <div class="filters__bar">
@@ -70,49 +70,49 @@
               </label>
             </div>
           </fieldset>
-          <fieldset class="filters__fieldset">
+          <fieldset class="filters__fieldset filters__fieldset-grid">
             <legend class="filters__legend">Cетка:</legend>
             <div class="filters__wrapper">
               <p class="filters__row">
-                <input class="filters__radio" id="adaptiv" type="radio" name="grid" value="adaptiv">
+                <input class="visually-hidden filters__input filters__radio" id="adaptiv" type="radio" name="grid" value="adaptiv" checked>
                 <label class="filters__title" for="adaptiv">Адаптивная</label>
               </p>
               <p class="filters__row">
-                <input class="filters__radio" id="fixed" type="radio" name="grid" value="fixed">
+                <input class="visually-hidden filters__input filters__radio" id="fixed" type="radio" name="grid" value="fixed">
                 <label class="filters__title" for="fixed">Фиксированная</label>
               </p>
               <p class="filters__row">
-                <input class="filters__radio" id="rubber" type="radio" name="grid" value="rubber">
+                <input class="visually-hidden filters__input filters__radio" id="rubber" type="radio" name="grid" value="rubber">
                 <label class="filters__title" for="rubber">Резиновая</label>
               </p>
             </div>
           </fieldset>
-          <fieldset class="filters__fieldset">
+          <fieldset class="filters__fieldset filters__fieldset-advantages">
             <legend class="filters__legend">Особенности:</legend>
             <div class="filters__wrapper">
               <p class="filters__row">
-                <input class="filters__checkbox" id="slider" type="checkbox" name="features" value="slider">
+                <input class="visually-hidden filters__input filters__checkbox" id="slider" type="checkbox" name="features" value="slider" checked>
                 <label class="filters__title" for="slider">Слайдер</label>
               </p>
               <p class="filters__row">
-                <input class="filters__checkbox" id="block-advantages" type="checkbox" name="features" value="block-advantages">
+                <input class="visually-hidden filters__input filters__checkbox" id="block-advantages" type="checkbox" name="features" value="block-advantages">
                 <label class="filters__title" for="block-advantages">Блок преимуществ</label>
               </p>
               <p class="filters__row">
-                <input class="filters__checkbox" id="news" type="checkbox" name="features" value="news">
+                <input class="visually-hidden filters__input filters__checkbox" id="news" type="checkbox" name="features" value="news" checked>
                 <label class="filters__title" for="news">Новости</label>
               </p>
               <p class="filters__row">
-                <input class="filters__checkbox" id="gallery" type="checkbox" name="features" value="gallery">
+                <input class="visually-hidden filters__input filters__checkbox" id="gallery" type="checkbox" name="features" value="gallery">
                 <label class="filters__title" for="gallery">Галерея</label>
               </p>
               <p class="filters__row">
-                <input class="filters__checkbox" id="cart" type="checkbox" name="features" value="cart">
+                <input class="visually-hidden filters__input filters__checkbox" id="cart" type="checkbox" name="features" value="cart">
                 <label class="filters__title" for="cart">Корзина</label>
               </p>
             </div>
           </fieldset>
-          <button class="filters__button button" type="submit" name="button">Показать</button>
+          <button class="filters__button button" type="submit">Показать</button>
         </form>
       </aside>
       <section class="makets">
@@ -121,7 +121,7 @@
           <div class="makets__sort-wrapper">
             <ul class="makets__sort-list">
               <li class="makets__sort-item">
-                <button class="makets__sort-button">По цене</button>
+                <button class="makets__sort-button makets__sort-button--active">По цене</button>
               </li>
               <li class="makets__sort-item">
                 <button class="makets__sort-button">По типу</button>
@@ -131,23 +131,25 @@
               </li>
             </ul>
             <div class="makets__sort-toggles">
-              <button class="makets__sort-toggle makets__sort-toggle--up">вверх</button>
-              <button class="makets__sort-toggle makets__sort-toggle--down">вниз</button>
+              <button class="makets__sort-toggle makets__sort-toggle--down makets__sort-toggle--active"></button>
+              <button class="makets__sort-toggle makets__sort-toggle--up"></button>
             </div>
           </div>
         </div>
         <ul class="makets__list">
           <li class="makets__item">
             <div class="makets__header">
-              <span class="makets__circle"></span>
-              <span class="makets__circle"></span>
-              <span class="makets__circle"></span>
+              <div class="makets__circles">
+                <span class="makets__circle"></span>
+                <span class="makets__circle"></span>
+                <span class="makets__circle"></span>
+              </div>
             </div>
-            <img class="makets__image" src="#" alt="Шаблон города Седона" width="360" height="575">
+            <img class="makets__image" src="img/img-sedona.jpg" alt="Шаблон города Седона" width="360" height="575">
             <div class="makets__info">
               <h2 class="makets__title">Sedona</h2>
-              <p class="makets__description">Информационный сайт для туристов</p>
-              <a class="makets__button button" href="#">9900 Руб.</a>
+              <p class="makets__description">Информационный сайт</br>для туристов</p>
+              <a class="makets__button button" href="#">9 900 Руб.</a>
             </div>
           </li>
           <li class="makets__item">
@@ -156,11 +158,11 @@
               <span class="makets__circle"></span>
               <span class="makets__circle"></span>
             </div>
-            <img class="makets__image" src="#" alt="Шаблон приложения Пинк" width="360" height="575">
+            <img class="makets__image" src="img/img-pink.jpg" alt="Шаблон приложения Пинк" width="360" height="575">
             <div class="makets__info">
               <h2 class="makets__title">Pink app</h2>
-              <p class="makets__description">Продуктовый лендинг приложения для iOS и Android</p>
-              <a class="makets__button button" href="#">9900 Руб.</a>
+              <p class="makets__description">Продуктовый лендинг</br>приложения для iOS и Android</p>
+              <a class="makets__button button" href="#">9 900 Руб.</a>
             </div>
           </li>
           <li class="makets__item">
@@ -169,11 +171,11 @@
               <span class="makets__circle"></span>
               <span class="makets__circle"></span>
             </div>
-            <img class="makets__image" src="#" alt="Шаблон Барбершоп Бородинский" width="360" height="575">
+            <img class="makets__image" src="img/img-barbershop.jpg" alt="Шаблон Барбершоп Бородинский" width="360" height="575">
             <div class="makets__info">
               <h2 class="makets__title">Barbershop</h2>
-              <p class="makets__description">Сайт салоны красоты. Для мужчин, да.</p>
-              <a class="makets__button button" href="#">9900 Руб.</a>
+              <p class="makets__description">Сайт салоны красоты.</br>Для мужчин, да.</p>
+              <a class="makets__button button" href="#">9 900 Руб.</a>
             </div>
           </li>
           <li class="makets__item">
@@ -182,11 +184,11 @@
               <span class="makets__circle"></span>
               <span class="makets__circle"></span>
             </div>
-            <img class="makets__image" src="#" alt="Шаблон интернет-мазагина Мишка" width="360" height="575">
+            <img class="makets__image" src="img/img-mishka.jpg" alt="Шаблон интернет-мазагина Мишка" width="360" height="575">
             <div class="makets__info">
               <h2 class="makets__title">Mishka</h2>
-              <p class="makets__description">Интернет-магазин вязаных игрушек</p>
-              <a class="makets__button button" href="#">9900 Руб.</a>
+              <p class="makets__description">Интернет-магазин</br>вязаных игрушек</p>
+              <a class="makets__button button" href="#">9 900 Руб.</a>
             </div>
           </li>
           <li class="makets__item">
@@ -195,11 +197,11 @@
               <span class="makets__circle"></span>
               <span class="makets__circle"></span>
             </div>
-            <img class="makets__image" src="#" alt="Шаблон сайта онлайн-образования А-плюс" width="360" height="575">
+            <img class="makets__image" src="img/img-aplus.jpg" alt="Шаблон сайта онлайн-образования А-плюс" width="360" height="575">
             <div class="makets__info">
               <h2 class="makets__title">A plus</h2>
-              <p class="makets__description">Лендинг курсов повышения квалификации</p>
-              <a class="makets__button button" href="#">9900 Руб.</a>
+              <p class="makets__description">Лендинг курсов повышения</br>квалификации</p>
+              <a class="makets__button button" href="#">9 900 Руб.</a>
             </div>
           </li>
           <li class="makets__item">
@@ -208,27 +210,27 @@
               <span class="makets__circle"></span>
               <span class="makets__circle"></span>
             </div>
-            <img class="makets__image" src="#" alt="Шаблон сайта крафтового кваса" width="360" height="575">
+            <img class="makets__image" src="img/img-kvast.jpg" alt="Шаблон сайта крафтового кваса" width="360" height="575">
             <div class="makets__info">
               <h2 class="makets__title">Кваст</h2>
-              <p class="makets__description">Промо-сайт производителя крафтового кваса</p>
-              <a class="makets__button button" href="#">9900 Руб.</a>
+              <p class="makets__description">Промо-сайт производителя</br>крафтового кваса</p>
+              <a class="makets__button button" href="#">9 900 Руб.</a>
             </div>
           </li>
         </ul>
         <div class="makets__pagination">
           <ul class="makets__pagination-list">
             <li class="makets__pagination-item">
-              <button class="makets__pagination-button">1</button>
+              <button class="makets__pagination-button button makets__pagination-button--active">1</button>
             </li>
             <li class="makets__pagination-item">
-              <button class="makets__pagination-button">2</button>
+              <button class="makets__pagination-button button">2</button>
             </li>
             <li class="makets__pagination-item">
-              <button class="makets__pagination-button">3</button>
+              <button class="makets__pagination-button button">3</button>
             </li>
             <li class="makets__pagination-item">
-              <button class="makets__pagination-button makets__pagination-button--next">Следущая</button>
+              <button class="makets__pagination-button button makets__pagination-button--next">Следующая</button>
             </li>
           </ul>
         </div>
